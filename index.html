@@ -563,14 +563,14 @@ details:hover,
               <span class="pill">File: Ouszues-PC-Optimizer.exe</span>
               <span class="pill">License: Free</span>
             </div>
-            <p class="version">Click download to open the automatic download page. Upload your real installer before publishing.</p>
+            <p class="version">Click download to start the Windows download automatically.</p>
           </div>
           <aside class="download-box">
             <a class="btn download-link" href="download.html">⬇ Download for Windows</a>
             <a class="btn secondary" href="install.html">Installation guide</a>
             <div>
-              <div class="version">SHA-256 checksum</div>
-              <div class="hash">Add checksum after building your final installer.</div>
+              <div class="version">Download status</div>
+              <div class="hash">Latest Windows release ready to download.</div>
             </div>
           </aside>
         </div>
@@ -581,7 +581,7 @@ details:hover,
       <div class="page-shell">
         <div class="section-head">
           <div class="kicker">Install</div>
-          <h2>Simple setup in three steps.</h2>
+          <h2>Simple install in three steps.</h2>
           <p>Use this section to make your download page feel trustworthy and clear.</p>
         </div>
         <div class="steps">
@@ -617,12 +617,12 @@ details:hover,
             <p>Yes, especially before running dangerous or advanced cleanup actions. The app includes a restore point button for administrator sessions.</p>
           </details>
           <details>
-            <summary>What should I upload for the download button?</summary>
-            <p>Upload your compiled installer or zip file to the <strong>downloads</strong> folder. The download page starts the file automatically and then sends users to the thank-you page.</p>
+            <summary>What happens when I click Download?</summary>
+            <p>The download page starts Ouszues PC Optimizer automatically. If it does not start, use the manual download button.</p>
           </details>
           <details>
-            <summary>Can I change the version number?</summary>
-            <p>Yes. Search this HTML file for <strong>v1.0.0</strong> and replace it with your current release version.</p>
+            <summary>Is Ouszues PC Optimizer free?</summary>
+            <p>Yes. The download page lists the app as free for Windows users.</p>
           </details>
         </div>
       </div>
@@ -664,7 +664,7 @@ details:hover,
       link.addEventListener("click", event => {
         if (!config.hasRealInstaller) {
           event.preventDefault();
-          showToast("Download link is ready, but no installer was uploaded yet. Add your .exe or .zip to the downloads folder and set hasRealInstaller to true.");
+          showToast("The download is temporarily unavailable. Please try again later.");
         }
       });
     });
