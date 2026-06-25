@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Thank You — Ouszues PC Optimizer</title>
-  <meta name="description" content="Thank you for downloading Ouszues PC Optimizer." />
+  <title>Downloading — Ouszues PC Optimizer</title>
+  <meta name="description" content="Your Ouszues PC Optimizer download is starting automatically." />
   <style>
     :root {
       --bg: #101010;
+      --bg-alt: #151515;
       --card: #1a1a1a;
       --card-hover: #222222;
       --text: #d4d4d4;
@@ -18,12 +19,16 @@
       --border-light: #353535;
       --indicator: #e0e0e0;
       --safe: #4ade80;
+      --radius: 22px;
     }
 
     * { box-sizing: border-box; }
     body {
       margin: 0;
       min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 22px;
       color: var(--text);
       background:
         radial-gradient(circle at 50% 0%, rgba(255,255,255,.06), transparent 30rem),
@@ -31,15 +36,8 @@
       font-family: "Segoe UI", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
     }
 
-    .wrap {
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      padding: 22px;
-    }
-
     .card {
-      width: min(760px, 100%);
+      width: min(720px, 100%);
       border-radius: 28px;
       background: linear-gradient(180deg, #1a1a1a, #151515);
       border: 1px solid var(--border-light);
@@ -84,24 +82,35 @@
       letter-spacing: 0;
     }
 
-    .check {
-      width: 78px;
-      height: 78px;
+    .loader {
+      width: 74px;
+      height: 74px;
       margin: 0 auto 24px;
+      border-radius: 50%;
+      border: 1px solid var(--border-light);
       display: grid;
       place-items: center;
-      border-radius: 50%;
-      background: rgba(74,222,128,.08);
-      border: 1px solid rgba(74,222,128,.35);
-      color: var(--safe);
-      font-size: 34px;
-      box-shadow: 0 0 50px rgba(74,222,128,.08);
+      background: #111;
+      position: relative;
     }
+
+    .loader::before {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      border-top-color: var(--indicator);
+      border-right-color: rgba(224,224,224,.45);
+      animation: spin 1.05s linear infinite;
+    }
+
+    .arrow { font-size: 28px; color: var(--text); }
 
     h1 {
       margin: 0 0 12px;
       color: #ededed;
-      font-size: clamp(34px, 6vw, 58px);
+      font-size: clamp(32px, 6vw, 54px);
       line-height: 1;
       letter-spacing: -.055em;
     }
@@ -109,38 +118,36 @@
     p {
       margin: 0 auto;
       color: var(--text-2);
-      max-width: 585px;
+      max-width: 560px;
       font-size: 16px;
       line-height: 1.6;
     }
 
-    .tips {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 10px;
-      margin-top: 30px;
-      text-align: left;
-    }
-
-    .tip {
+    .status {
+      margin: 24px auto 0;
+      width: min(430px, 100%);
       border: 1px solid var(--border);
-      background: rgba(16,16,16,.42);
       border-radius: 16px;
-      padding: 16px;
-      min-height: 128px;
-    }
-
-    .tip b {
-      display: block;
-      color: var(--text);
-      margin-bottom: 8px;
-      font-size: 14px;
-    }
-
-    .tip span {
+      background: rgba(16,16,16,.44);
+      padding: 14px;
       color: var(--text-3);
       font-size: 13px;
-      line-height: 1.5;
+    }
+
+    .progress {
+      height: 7px;
+      background: var(--border);
+      border-radius: 99px;
+      overflow: hidden;
+      margin-top: 12px;
+    }
+
+    .bar {
+      height: 100%;
+      width: 0%;
+      background: var(--indicator);
+      border-radius: inherit;
+      animation: fill 4.5s ease forwards;
     }
 
     .actions {
@@ -148,7 +155,7 @@
       justify-content: center;
       gap: 10px;
       flex-wrap: wrap;
-      margin-top: 30px;
+      margin-top: 28px;
     }
 
     .btn {
@@ -179,10 +186,8 @@
       font-size: 12px;
     }
 
-    @media (max-width: 720px) {
-      .tips { grid-template-columns: 1fr; }
-      .actions .btn { width: 100%; }
-    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes fill { to { width: 100%; } }
   
 
 /* Smooth page transitions and polished movement */
@@ -254,38 +259,54 @@ details:hover,
 </style>
 </head>
 <body>
-  <main class="wrap">
-    <section class="card">
-      <div class="content">
-        <div class="brand"><span class="brand-mark">O</span> OUSZUES PC OPTIMIZER</div>
-        <div class="check">✓</div>
-        <h1>Thank you for downloading.</h1>
-        <p>Your Ouszues PC Optimizer download should now be saved or in progress. Open the downloaded file when it finishes, then follow the prompts from your browser or Windows.</p>
+  <main class="card">
+    <div class="content">
+      <div class="brand"><span class="brand-mark">O</span> OUSZUES PC OPTIMIZER</div>
+      <div class="loader" aria-hidden="true"><div class="arrow">⬇</div></div>
+      <h1>Your download is starting.</h1>
+      <p>Ouszues PC Optimizer should begin downloading automatically. If your browser asks for permission, choose save or keep.</p>
 
-        <div class="tips">
-          <div class="tip">
-            <b>1. Check downloads</b>
-            <span>Look in your browser downloads bar or your Downloads folder.</span>
-          </div>
-          <div class="tip">
-            <b>2. Run safely</b>
-            <span>Create a restore point before using advanced or dangerous cleanup actions.</span>
-          </div>
-          <div class="tip">
-            <b>3. Need admin?</b>
-            <span>Some optimization tasks may require running the app as administrator.</span>
-          </div>
-        </div>
-
-        <div class="actions">
-          <a class="btn" href="downloads/Ouszues-PC-Optimizer.exe" download>Download again</a>
-          <a class="btn secondary" href="index.html">Back to homepage</a>
-        </div>
-
-        <div class="small-note">If the download did not start, click “Download again”.</div>
+      <div class="status">
+        Starting automatic download… sending you to the thank-you page next.
+        <div class="progress"><div class="bar"></div></div>
       </div>
-    </section>
+
+      <div class="actions">
+        <a class="btn" id="manualDownload" href="downloads/Ouszues-PC-Optimizer.exe" download>Download manually</a>
+        <a class="btn secondary" href="thanks.html">Skip to thank you</a>
+      </div>
+
+      <div class="small-note">If the download does not start, click “Download manually”.</div>
+    </div>
   </main>
+
+  <script>
+    const installerUrl = "downloads/Ouszues-PC-Optimizer.exe";
+    const installerName = "Ouszues-PC-Optimizer.exe";
+    const thanksUrl = "thanks.html";
+
+    function startDownload() {
+      const link = document.createElement("a");
+      link.href = installerUrl;
+      link.download = installerName;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+    }
+
+    document.getElementById("manualDownload").addEventListener("click", () => {
+      setTimeout(() => {
+        window.smoothNavigate ? window.smoothNavigate(thanksUrl) : (window.location.href = thanksUrl);
+      }, 1800);
+    });
+
+    window.addEventListener("load", () => {
+      setTimeout(startDownload, 650);
+      setTimeout(() => {
+        window.smoothNavigate ? window.smoothNavigate(thanksUrl) : (window.location.href = thanksUrl);
+      }, 5200);
+    });
+  </script>
 
 <script>
   // Smooth fade-out/fade-in page navigation for internal website links.

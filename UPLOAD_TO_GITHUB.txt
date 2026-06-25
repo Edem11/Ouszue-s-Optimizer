@@ -1,0 +1,21 @@
+IMPORTANT: Your GitHub files are mixed up. Fix it by replacing the files with the correct ones from this zip.
+
+Correct file mapping:
+index.html = Homepage
+features.html = Features page
+install.html = Install guide page
+faq.html = FAQ page
+safety.html = Safety page
+downloads.html = Download information page
+download.html = Automatic download page
+thanks.html = Thank-you page
+README.md = Only GitHub readme / instructions, NOT a website page
+
+GitHub fix steps:
+1. Go to your repository Code tab.
+2. Delete the wrong .html files or overwrite them by uploading the correct files from this zip.
+3. Upload ALL files at the same time.
+4. Click Commit changes.
+5. Wait 1-3 minutes and refresh GitHub Pages.
+
+Do not paste README.md text into safety.html, faq.html, index.html, or any other .html file.
