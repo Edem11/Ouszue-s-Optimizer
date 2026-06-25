@@ -9,3 +9,7 @@ https://github.com/Edem11/Ouszue-s-Optimizer/releases/latest/download/ouszue_opt
 ```
 
 The app file is hosted in GitHub Releases.
+
+## Contact
+
+If something is wrong, contact: [Anousakra@gmail.com](mailto:Anousakra@gmail.com)
