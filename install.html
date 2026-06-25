@@ -359,7 +359,75 @@
       .download-copy, .download-box { padding: 24px; }
       h1 { letter-spacing: -.055em; }
     }
-  </style>
+  
+
+/* Smooth page transitions and polished movement */
+html { scroll-behavior: smooth; }
+body {
+  opacity: 0;
+  transform: translateY(10px);
+  filter: blur(2px);
+  transition:
+    opacity .46s cubic-bezier(.22, 1, .36, 1),
+    transform .46s cubic-bezier(.22, 1, .36, 1),
+    filter .46s cubic-bezier(.22, 1, .36, 1);
+}
+body.page-loaded {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+body.page-leaving {
+  opacity: 0;
+  transform: translateY(10px);
+  filter: blur(2px);
+}
+.btn,
+.card,
+.feature-card,
+.step,
+.tip,
+details,
+.app-window,
+.download-panel,
+.spec-card,
+.side-item,
+.nav-links a,
+.links a,
+.brand,
+.brand-mark,
+.mark {
+  transition:
+    transform .24s cubic-bezier(.22, 1, .36, 1),
+    background .24s ease,
+    border-color .24s ease,
+    color .24s ease,
+    box-shadow .24s ease,
+    opacity .24s ease;
+}
+.card:hover,
+.step:hover,
+.tip:hover,
+details:hover,
+.spec-card:hover {
+  transform: translateY(-3px);
+  border-color: #3d3d3d;
+  box-shadow: 0 20px 44px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.04);
+}
+.brand:hover,
+.brand-mark:hover,
+.mark:hover { transform: translateY(-1px); }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+  body { opacity: 1 !important; transform: none !important; filter: none !important; }
+}
+
+</style>
 </head>
 <body>
   <header class="nav">
@@ -601,5 +669,50 @@
       });
     });
   </script>
+
+<script>
+  // Smooth fade-out/fade-in page navigation for internal website links.
+  (() => {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    function showPage() {
+      document.body.classList.remove("page-leaving");
+      document.body.classList.add("page-loaded");
+    }
+
+    window.smoothNavigate = function(url) {
+      if (reduceMotion) {
+        window.location.href = url;
+        return;
+      }
+      document.body.classList.remove("page-loaded");
+      document.body.classList.add("page-leaving");
+      window.setTimeout(() => {
+        window.location.href = url;
+      }, 260);
+    };
+
+    window.addEventListener("pageshow", () => {
+      requestAnimationFrame(showPage);
+    });
+
+    document.addEventListener("click", (event) => {
+      const link = event.target.closest("a[href]");
+      if (!link) return;
+      if (link.hasAttribute("download")) return;
+      if (link.target && link.target !== "_self") return;
+
+      const href = link.getAttribute("href");
+      if (!href || href.startsWith("#") || href.startsWith("mailto:") || href.startsWith("tel:") || href.startsWith("javascript:")) return;
+
+      const url = new URL(href, window.location.href);
+      if (url.origin !== window.location.origin) return;
+
+      event.preventDefault();
+      window.smoothNavigate(url.href);
+    });
+  })();
+</script>
+
 </body>
 </html>

@@ -1,3 +1,116 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Install — Ouszues PC Optimizer</title><style>
 :root{--bg:#101010;--bg-alt:#151515;--card:#1a1a1a;--card-hover:#222;--text:#d4d4d4;--text2:#888;--text3:#555;--text4:#333;--border:#2a2a2a;--border-light:#353535;--indicator:#e0e0e0;--safe:#4ade80;--danger:#f87171;--boost:#c084fc;--space:#60a5fa;--max:1120px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 50% 0%,rgba(255,255,255,.06),transparent 30rem),linear-gradient(180deg,#111,var(--bg));color:var(--text);font-family:"Segoe UI",Inter,system-ui,-apple-system,BlinkMacSystemFont,Arial,sans-serif;line-height:1.55;min-height:100vh}a{color:inherit;text-decoration:none}.shell{width:min(var(--max),calc(100% - 32px));margin:auto}.nav{position:sticky;top:0;z-index:10;background:rgba(16,16,16,.76);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}.nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:12px}.mark{width:38px;height:38px;display:grid;place-items:center;border-radius:12px;background:#171717;border:1px solid var(--border-light);font-weight:900}.brand strong{font-size:13px;letter-spacing:.16em}.brand span{display:block;color:var(--text3);font-size:12px;letter-spacing:.12em;margin-top:2px}.links{display:flex;gap:6px;align-items:center}.links a{color:var(--text2);font-size:13px;padding:9px 12px;border-radius:999px}.links a:hover,.links a.active{color:var(--text);background:var(--card)}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:12px;border:1px solid var(--border-light);background:#242424;color:var(--text);font-weight:800;font-size:14px;transition:.18s}.btn:hover{transform:translateY(-1px);background:#2b2b2b}.btn.secondary{background:transparent;color:var(--text2)}.btn.secondary:hover{background:var(--card-hover);color:var(--text)}.hero{padding:70px 0 42px}.kicker{color:var(--text4);font-weight:900;letter-spacing:.18em;text-transform:uppercase;font-size:12px;margin-bottom:10px}h1{font-size:clamp(38px,6vw,68px);line-height:.96;letter-spacing:-.055em;margin:0 0 16px;color:#ededed}h2{font-size:clamp(28px,4vw,44px);line-height:1;letter-spacing:-.045em;margin:0 0 14px;color:#e6e6e6}p{margin-top:0;color:var(--text2)}.lead{font-size:17px;max-width:720px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:26px auto 70px}.card{border:1px solid var(--border);background:linear-gradient(180deg,#1a1a1a,#151515);border-radius:20px;padding:22px;min-height:170px;box-shadow:inset 0 1px 0 rgba(255,255,255,.035)}.card h3{margin:0 0 8px;font-size:17px}.card p{font-size:14px;margin-bottom:0}.icon{width:38px;height:38px;display:grid;place-items:center;border-radius:12px;background:#111;border:1px solid var(--border-light);margin-bottom:18px}.safe{color:var(--safe)}.danger{color:var(--danger)}.boost{color:var(--boost)}.space{color:var(--space)}.panel{border:1px solid var(--border-light);border-radius:26px;background:linear-gradient(180deg,#1a1a1a,#151515);padding:28px;margin:20px auto 70px}.row{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.step{display:grid;grid-template-columns:44px 1fr;gap:16px;border-top:1px solid var(--border);padding:22px 0}.step:first-child{border-top:0}.num{width:40px;height:40px;display:grid;place-items:center;border-radius:13px;background:#111;border:1px solid var(--border-light);color:var(--text3);font-weight:900}.step h3{margin:0 0 6px}.step p{margin:0;font-size:14px}details{border:1px solid var(--border);background:var(--card);border-radius:16px;padding:0 18px;margin-bottom:10px}summary{cursor:pointer;padding:18px 0;font-weight:800;list-style:none}summary::-webkit-details-marker{display:none}details p{font-size:14px;padding-bottom:18px;margin:0}footer{border-top:1px solid var(--border);padding:30px 0;color:var(--text3);font-size:13px}.foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}.foot a:hover{color:var(--text)}@media(max-width:820px){.links{display:none}.grid{grid-template-columns:1fr}.nav-inner{height:64px}.hero{padding-top:46px}.row .btn{width:100%}}
-</style></head><body><header class="nav"><div class="shell nav-inner"><a class="brand" href="index.html"><div class="mark">O</div><div><strong>OUSZUES</strong><span>PC OPTIMIZER</span></div></a><nav class="links"><a class="" href="index.html">Home</a><a class="" href="features.html">Features</a><a class="active" href="install.html">Install</a><a class="" href="faq.html">FAQ</a><a class="" href="safety.html">Safety</a></nav><a class="btn" href="download.html">Download</a></div></header><main><section class="shell hero"><div class="kicker">Install guide</div><h1>How to download and run it.</h1><p class="lead">Follow these simple steps after uploading your real installer to the downloads folder.</p><div class="row"><a class="btn" href="download.html">Download for Windows</a><a class="btn secondary" href="faq.html">Read FAQ</a></div></section><section class="shell panel"><div class="step"><div class="num">01</div><div><h3>Click Download</h3><p>Press the download button. You will go to the automatic download page.</p></div></div><div class="step"><div class="num">02</div><div><h3>Wait for the file</h3><p>The browser downloads <strong>Ouszues-PC-Optimizer.exe</strong>. If it does not start, click “Download manually”.</p></div></div><div class="step"><div class="num">03</div><div><h3>Open the file</h3><p>Open the downloaded file from your Downloads folder.</p></div></div><div class="step"><div class="num">04</div><div><h3>Use carefully</h3><p>Create a restore point before running advanced or dangerous tasks. Some tasks may require administrator mode.</p></div></div></section></main><footer><div class="shell foot"><div>© <span id="year"></span> Ouszues PC Optimizer.</div><div><a href="features.html">Features</a> · <a href="install.html">Install</a> · <a href="faq.html">FAQ</a> · <a href="safety.html">Safety</a></div></div></footer><script>document.getElementById('year').textContent=new Date().getFullYear()</script></body></html>
+
+
+/* Smooth page transitions and polished movement */
+html { scroll-behavior: smooth; }
+body {
+  opacity: 0;
+  transform: translateY(10px);
+  filter: blur(2px);
+  transition:
+    opacity .46s cubic-bezier(.22, 1, .36, 1),
+    transform .46s cubic-bezier(.22, 1, .36, 1),
+    filter .46s cubic-bezier(.22, 1, .36, 1);
+}
+body.page-loaded {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+body.page-leaving {
+  opacity: 0;
+  transform: translateY(10px);
+  filter: blur(2px);
+}
+.btn,
+.card,
+.feature-card,
+.step,
+.tip,
+details,
+.app-window,
+.download-panel,
+.spec-card,
+.side-item,
+.nav-links a,
+.links a,
+.brand,
+.brand-mark,
+.mark {
+  transition:
+    transform .24s cubic-bezier(.22, 1, .36, 1),
+    background .24s ease,
+    border-color .24s ease,
+    color .24s ease,
+    box-shadow .24s ease,
+    opacity .24s ease;
+}
+.card:hover,
+.step:hover,
+.tip:hover,
+details:hover,
+.spec-card:hover {
+  transform: translateY(-3px);
+  border-color: #3d3d3d;
+  box-shadow: 0 20px 44px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.04);
+}
+.brand:hover,
+.brand-mark:hover,
+.mark:hover { transform: translateY(-1px); }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+  body { opacity: 1 !important; transform: none !important; filter: none !important; }
+}
+
+</style></head><body><header class="nav"><div class="shell nav-inner"><a class="brand" href="index.html"><div class="mark">O</div><div><strong>OUSZUES</strong><span>PC OPTIMIZER</span></div></a><nav class="links"><a class="" href="index.html">Home</a><a class="" href="features.html">Features</a><a class="active" href="install.html">Install</a><a class="" href="faq.html">FAQ</a><a class="" href="safety.html">Safety</a></nav><a class="btn" href="download.html">Download</a></div></header><main><section class="shell hero"><div class="kicker">Install guide</div><h1>How to download and run it.</h1><p class="lead">Follow these simple steps after uploading your real installer to the downloads folder.</p><div class="row"><a class="btn" href="download.html">Download for Windows</a><a class="btn secondary" href="faq.html">Read FAQ</a></div></section><section class="shell panel"><div class="step"><div class="num">01</div><div><h3>Click Download</h3><p>Press the download button. You will go to the automatic download page.</p></div></div><div class="step"><div class="num">02</div><div><h3>Wait for the file</h3><p>The browser downloads <strong>Ouszues-PC-Optimizer.exe</strong>. If it does not start, click “Download manually”.</p></div></div><div class="step"><div class="num">03</div><div><h3>Open the file</h3><p>Open the downloaded file from your Downloads folder.</p></div></div><div class="step"><div class="num">04</div><div><h3>Use carefully</h3><p>Create a restore point before running advanced or dangerous tasks. Some tasks may require administrator mode.</p></div></div></section></main><footer><div class="shell foot"><div>© <span id="year"></span> Ouszues PC Optimizer.</div><div><a href="features.html">Features</a> · <a href="install.html">Install</a> · <a href="faq.html">FAQ</a> · <a href="safety.html">Safety</a></div></div></footer><script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+<script>
+  // Smooth fade-out/fade-in page navigation for internal website links.
+  (() => {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    function showPage() {
+      document.body.classList.remove("page-leaving");
+      document.body.classList.add("page-loaded");
+    }
+
+    window.smoothNavigate = function(url) {
+      if (reduceMotion) {
+        window.location.href = url;
+        return;
+      }
+      document.body.classList.remove("page-loaded");
+      document.body.classList.add("page-leaving");
+      window.setTimeout(() => {
+        window.location.href = url;
+      }, 260);
+    };
+
+    window.addEventListener("pageshow", () => {
+      requestAnimationFrame(showPage);
+    });
+
+    document.addEventListener("click", (event) => {
+      const link = event.target.closest("a[href]");
+      if (!link) return;
+      if (link.hasAttribute("download")) return;
+      if (link.target && link.target !== "_self") return;
+
+      const href = link.getAttribute("href");
+      if (!href || href.startsWith("#") || href.startsWith("mailto:") || href.startsWith("tel:") || href.startsWith("javascript:")) return;
+
+      const url = new URL(href, window.location.href);
+      if (url.origin !== window.location.origin) return;
+
+      event.preventDefault();
+      window.smoothNavigate(url.href);
+    });
+  })();
+</script>
+
+</body></html>
